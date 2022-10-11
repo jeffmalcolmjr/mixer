@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Page</title>
+    <link rel="stylesheet" href="mixer.css">
+</head>
+<body id="my_code">
+    <h1 id="head">Color Mixer</h1>
+        <div id="Input">
+            <b id="bold">Red:
+            <input id="rValue" type="number" min="0" max="255">
+            Green:
+            <input id="gValue" type="number" min="0" max="255">
+            Blue:
+            <input id="bValue" type="number" min="0" max="255">
+            </b>
+            <div>
+                <p></p><button id="calc" onclick="changeColor();">Calculate</button>
+                <button id="Reset" onclick="reset();">Reset</button>
+            </div>
+        </div>
+</body>
+<script src="mixer.js"></script>
+</html>
