@@ -33,5 +33,8 @@ function reset() {
     header.style.color = 'black'
     var bold = document.getElementById("bold")
     bold.style.color = 'black'
+    document.getElementById("rInput").value = ''
+    document.getElementById("gInput").value = ''
+    document.getElementById("bInput").value = ''
 }
 
