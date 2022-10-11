@@ -14,6 +14,12 @@ function changeColor() {
         const bold = document.getElementById("bold")
         bold.style.color = 'white'
     }
+    if (!((rValue < 60 ) && (bValue < 60) && (gValue < 60))) {
+        const header = document.getElementById("head")
+        header.style.color = 'black'
+        const bold = document.getElementById("bold")
+        bold.style.color = 'black'
+    }
     if((rValue > 199) && (bValue > 199) && (gValue > 199)) {
         const header = document.getElementById("head")
         header.style.color = 'black'
@@ -33,8 +39,8 @@ function reset() {
     header.style.color = 'black'
     var bold = document.getElementById("bold")
     bold.style.color = 'black'
-    document.getElementById("rInput").value = ''
-    document.getElementById("gInput").value = ''
-    document.getElementById("bInput").value = ''
+    document.getElementById("rValue").value = ''
+    document.getElementById("bValue").value = ''
+    document.getElementById("gValue").value = ''
 }
 
