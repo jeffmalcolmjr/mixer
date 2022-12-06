@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Mixer</title>
+    <title>RGB Sliders</title>
     <link rel="stylesheet" href="mixer.css">
 </head>
+<b><p id="head">RGB Sliders</p></b>
 <body id="my_code">
-    <h1 id="head">Color Mixer</h1>
+    <div>
         <div id="Input">
-            <b id="bold">Red:
-            <input id="rValue" type="number" min="0" max="255">
-            Green:
-            <input id="gValue" type="number" min="0" max="255">
-            Blue:
-            <input id="bValue" type="number" min="0" max="255">
+            <!--Sliders-->
+            <b id="bold">
+            <p>Red:</p>
+            <input id="rValue" type="range" min="0" max="255" step="1" class="slider" oninput="changeColor()">
+            <p>Green:</p>
+            <input id="gValue" type="range" min="0" max="255" step="1" class="slider" oninput="changeColor()">
+            <p>Blue:</p>
+            <input id="bValue" type="range" min="0" max="255" step="1" class="slider" oninput="changeColor()">
+            <p>Hex Code:</p>
+            <p id="hexOutput">#808080</p>
             </b>
-            <div>
-                <p></p><button id="calc" onclick="changeColor();">Calculate</button>
-                <button id="Reset" onclick="reset();">Reset</button>
-            </div>
         </div>
+        <footer id="footer">Made by Jeffrey Malcolm</footer>
 </body>
+
 <script src="mixer.js"></script>
+
 </html>
